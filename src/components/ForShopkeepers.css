@@ -1,0 +1,159 @@
+.for-shopkeepers {
+  background: var(--green-900);
+  color: var(--white);
+}
+
+.for-shopkeepers .section-label {
+  background: rgba(255,255,255,0.1);
+  color: var(--green-300);
+}
+
+.for-shopkeepers .section-title {
+  color: var(--white);
+}
+
+.for-shopkeepers .section-title span {
+  color: var(--green-300);
+}
+
+.for-shopkeepers .section-subtitle {
+  color: var(--green-100);
+}
+
+.for-shopkeepers__header {
+  text-align: center;
+  margin-bottom: 56px;
+}
+
+.for-shopkeepers__header .section-subtitle {
+  margin: 0 auto;
+}
+
+.for-shopkeepers__layout {
+  display: grid;
+  grid-template-columns: 1fr 360px;
+  gap: 40px;
+  align-items: start;
+}
+
+.for-shopkeepers__features {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+
+.shop-feature {
+  background: rgba(255,255,255,0.05);
+  border: 1px solid rgba(255,255,255,0.1);
+  border-radius: 14px;
+  padding: 22px;
+  transition: background 0.2s, transform 0.2s;
+}
+
+.shop-feature:hover {
+  background: rgba(255,255,255,0.09);
+  transform: translateY(-2px);
+  box-shadow: none;
+}
+
+.shop-feature__icon {
+  font-size: 1.8rem;
+  display: block;
+  margin-bottom: 10px;
+}
+
+.shop-feature__title {
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: var(--white);
+  margin-bottom: 6px;
+}
+
+.shop-feature__desc {
+  font-size: 0.85rem;
+  color: var(--green-200);
+  line-height: 1.5;
+}
+
+/* Why card */
+.for-shopkeepers__why {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.why-card {
+  background: var(--green-700);
+  border-radius: 16px;
+  padding: 28px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.why-card__title {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: var(--white);
+}
+
+.why-card__list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.why-card__item {
+  display: flex;
+  gap: 10px;
+  font-size: 0.88rem;
+  color: var(--green-100);
+  line-height: 1.5;
+}
+
+.why-card__check {
+  color: var(--green-300);
+  font-weight: 700;
+  flex-shrink: 0;
+  margin-top: 1px;
+}
+
+.shop-stat-card {
+  background: rgba(255,255,255,0.05);
+  border: 1px solid rgba(255,255,255,0.1);
+  border-radius: 16px;
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.shop-stat {
+  display: flex;
+  gap: 14px;
+  align-items: center;
+}
+
+.shop-stat__icon {
+  font-size: 1.6rem;
+  flex-shrink: 0;
+}
+
+.shop-stat__value {
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: var(--white);
+}
+
+.shop-stat__label {
+  font-size: 0.78rem;
+  color: var(--green-300);
+}
+
+@media (max-width: 900px) {
+  .for-shopkeepers__layout { grid-template-columns: 1fr; }
+}
+
+@media (max-width: 580px) {
+  .for-shopkeepers__features { grid-template-columns: 1fr; }
+}

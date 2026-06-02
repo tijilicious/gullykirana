@@ -23,10 +23,22 @@ export default function Contact() {
     return e
   }
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault()
     const e2 = validate()
     if (Object.keys(e2).length) { setErrors(e2); return }
+
+    const SHEET_URL = 'https://script.google.com/macros/s/AKfycbzdE39OswGA3sHwQlq74zIr21dfCXy2FtYLSJno3Ji1I-oJHwsxBaOpn-A3iAHquAI59w/exec'
+    try {
+      await fetch(SHEET_URL, {
+        method: 'POST',
+        mode: 'no-cors',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(form),
+      })
+    } catch (err) {
+      console.error('Submission error:', err)
+    }
     setSubmitted(true)
   }
 

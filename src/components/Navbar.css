@@ -34,8 +34,11 @@
   flex-shrink: 0;
 }
 
-.navbar__logo-icon {
-  font-size: 1.5rem;
+.navbar__logo-img {
+  width: 36px;
+  height: 36px;
+  border-radius: 8px;
+  object-fit: cover;
 }
 
 .navbar__links {

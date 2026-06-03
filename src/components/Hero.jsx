@@ -54,7 +54,7 @@ export default function Hero() {
           <div className="hero__phone-mockup">
             <div className="phone__screen">
               <div className="phone__header">
-                <span className="phone__logo">🥬 GullyKirana</span>
+                <span className="phone__logo"><img src="/gullykirana/logo.jpeg" alt="logo" style={{width:'16px',height:'16px',borderRadius:'4px',verticalAlign:'middle',marginRight:'4px'}} />GullyKirana</span>
                 <span className="phone__location">📍 Sector 14</span>
               </div>
               <div className="phone__search">🔍 Search groceries…</div>

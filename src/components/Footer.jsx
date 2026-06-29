@@ -17,7 +17,7 @@ export default function Footer() {
       <div className="container footer__inner">
         <div className="footer__brand">
           <button className="footer__logo" onClick={() => scrollTo('home')}>
-            <img src="/gullykirana/logo.jpeg" alt="GullyKirana" style={{width:'32px',height:'32px',borderRadius:'8px',objectFit:'cover'}} />
+            <img src="/logo.jpeg" alt="GullyKirana" style={{width:'32px',height:'32px',borderRadius:'8px',objectFit:'cover'}} />
             GullyKirana
           </button>
           <p className="footer__tagline">Quick commerce, from your own neighbourhood.</p>

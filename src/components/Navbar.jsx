@@ -29,7 +29,7 @@ export default function Navbar({ activeSection }) {
     <header className={`navbar${scrolled ? ' navbar--scrolled' : ''}`}>
       <div className="navbar__inner">
         <button className="navbar__logo" onClick={() => scrollTo('home')}>
-          <img src="/gullykirana/logo.jpeg" alt="GullyKirana" className="navbar__logo-img" />
+          <img src="/logo.jpeg" alt="GullyKirana" className="navbar__logo-img" />
           <span className="navbar__logo-text">GullyKirana</span>
         </button>
 
